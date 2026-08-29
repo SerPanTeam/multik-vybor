@@ -1,5 +1,5 @@
 const cartoons=[
-{title:'Микки Маус',image:'https://thumbs.dfs.ivi.ru/storage0/contents/f/2/19db4912db4f20a5adcc76074b341d.jpg'},
+{title:'Микки Маус',image:'https://vignette.wikia.nocookie.net/disneyarabic/images/7/78/Mickey_Mouse_Iconic.png/revision/latest?cb=20160817071240&path-prefix=ar'},
 {title:'Маша и Медведь',image:'https://multyashka.at.ua/_ld/0/15.jpg'},
 {title:'Баранчик Шон',image:'https://lostplay.ru/img/shaun-the-sheep.jpg'},
 {title:'Пингвины',image:'https://kor.ill.in.ua/m/1260x900/1537912.jpg'},
