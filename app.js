@@ -4,7 +4,7 @@ const cartoons=[
 {title:'Баранчик Шон',image:'https://lostplay.ru/img/shaun-the-sheep.jpg'},
 {title:'Пингвины',image:'https://kor.ill.in.ua/m/1260x900/1537912.jpg'},
 {title:'Буба',image:'https://fanfics.me/images/fandoms_canons/1974-1626803723-big.jpg'},
-{title:'Барбоскины',image:'https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/8953e4f7-b758-4c79-84dd-9e26b30f19d8/600x900'}
+{title:'Барбоскины',image:'https://www.karusel-tv.ru/media/suit/in1200x720/media/game/cover/barbos/1670343695227428_barbos.jpg'}
 ];
 const grid=document.getElementById('cartoonGrid');
 function render(){grid.innerHTML='';cartoons.forEach((c,i)=>{const b=document.createElement('button');b.className=`card c${i}`;b.type='button';b.setAttribute('aria-label',c.title);b.innerHTML=`<img class="card-image" src="${c.image}" alt="${c.title}" loading="eager"><span class="card-title">${c.title}</span>`;b.addEventListener('click',()=>choose(c));grid.appendChild(b)})}
