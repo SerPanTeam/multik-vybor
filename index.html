@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ffcf33">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Сашка, выбирай мультик!</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero" id="parentTrigger" aria-label="Удерживайте для настроек">
+      <div class="sun">☀️</div>
+      <div>
+        <h1>Сашка, выбирай 👇</h1>
+        <p>Какой мультик посмотрим?</p>
+      </div>
+    </header>
+
+    <section class="grid" id="cartoonGrid" aria-label="Выбор мультфильма"></section>
+  </main>
+
+  <section class="chosen" id="chosen" hidden aria-live="polite">
+    <div class="chosen-card">
+      <div class="check">✓</div>
+      <div class="chosen-emoji" id="chosenEmoji">🐭</div>
+      <h2 id="chosenTitle">Микки Маус</h2>
+      <p id="chosenText"></p>
+      <button id="backButton" type="button">Выбрать другой</button>
+    </div>
+  </section>
+
+  <dialog id="settingsDialog">
+    <form method="dialog" class="settings">
+      <div class="settings-head">
+        <h2>Настройки для папы</h2>
+        <button class="icon-button" value="cancel" aria-label="Закрыть">✕</button>
+      </div>
+      <label class="field">
+        <span>Что говорить после выбора</span>
+        <textarea id="phraseInput" rows="3"></textarea>
+      </label>
+      <div>
+        <h3>Показывать мультфильмы</h3>
+        <div id="settingsList" class="settings-list"></div>
+      </div>
+      <button class="save" id="saveSettings" value="default">Сохранить</button>
+    </form>
+  </dialog>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
