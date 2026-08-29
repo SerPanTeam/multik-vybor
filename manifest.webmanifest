@@ -1,0 +1,10 @@
+{
+  "name":"Сашка выбирает мультик",
+  "short_name":"Мультик",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#fff7df",
+  "theme_color":"#ffcf33",
+  "lang":"ru",
+  "icons":[]
+}
